@@ -1,0 +1,66 @@
+import type { AppContract } from "@interchained/portal-contract";
+
+const contract: AppContract = {
+  name: "Portal",
+  version: "1.0.0",
+  description: "The agent-native web framework — build apps where AI generates, audits, and improves pages.",
+  primaryAudience: "JavaScript and TypeScript developers building AI-assisted web apps",
+
+  conversion: {
+    primaryCTA: "npm create @interchained/portal-app",
+    secondaryCTA: "Read the docs",
+    goal: "Developer installs Portal and scaffolds their first app",
+  },
+
+  seo: {
+    titleTemplate: "%s — Portal Framework",
+    defaultTitle: "Portal — Agent-Native Web Framework",
+    defaultDescription: "The web framework built for AI agents. File-based routing, app contracts, and a Sentinel that reviews and fixes AI-generated code before it touches your codebase.",
+    ogImage: "/og.png",
+    canonicalBase: "https://portal.interchained.org",
+  },
+
+  brand: {
+    name: "Portal",
+    voice: "Technical, direct, confident. No hype. Speak to engineers.",
+    colors: {
+      primary: "#7C3AED",
+      secondary: "#06B6D4",
+      background: "#0A0A0F",
+      surface: "#13131A",
+      text: "#E8E8F0",
+      muted: "#6B6B80",
+    },
+    forbiddenPhrases: [
+      "revolutionary",
+      "game-changing",
+      "10x developer",
+      "just works",
+      "blazing fast",
+    ],
+  },
+
+  policies: {
+    publishing: "human_review",
+    forbiddenClaims: [
+      "Portal is faster than Next.js",
+      "Portal replaces Next.js",
+      "AI never makes mistakes",
+    ],
+  },
+
+  compliance: {
+    gdpr: true,
+    cookiePolicy: "none",
+  },
+
+  qualityGates: {
+    minContrastRatio: 4.5,
+    requireAltText: true,
+    maxH1PerPage: 1,
+    noPlaceholderCopy: true,
+    noUnreplacedTokens: true,
+  },
+};
+
+export default contract;
